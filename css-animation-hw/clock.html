@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>clock</title>
+    <style>
+        body {
+            background-color: #4988ed;
+        }
+
+        #clock {
+            height: 500px;
+            width: 500px;
+            border-radius: 50%;
+            margin: auto;
+
+            background: url(https://cssanimation.rocks/images/posts/clocks/ios_clock.svg) white;
+            background-size: 450px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        #second {
+            height: 230px;
+            width: 2px;
+            background-color: black;
+            transform-origin: bottom;
+            position: absolute;
+            margin-top: 20px;
+            margin-left: 250px;
+            animation: move 60s infinite steps(60);
+        }
+
+        #minute {
+            height: 200px;
+            width: 4px;
+            background-color: black;
+            transform-origin: bottom;
+            position: absolute;
+            margin-top: 50px;
+            margin-left: 250px;
+            animation: move 3600s infinite linear;
+        }
+
+        #hour {
+            height: 150px;
+            width: 6px;
+            background-color: black;
+            transform-origin: bottom;
+            position: absolute;
+            margin-top: 100px;
+            margin-left: 250px;
+            animation: move 216000s infinite linear;
+        }
+
+        @keyframes move {
+            from {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="clock">
+        <div id="second"></div>
+        <div id="minute"></div>
+        <div id="hour"></div>
+    </div>
+</body>
+</html>

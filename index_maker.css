@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 4000px;
+    background-color: whitesmoke;
+}
+
+#nav {
+    height: 80px;
+    position: relative;
+}
+
+#Title {
+    position: absolute;
+    height: 30px;
+    width: 130px;
+    font-family: 'raleway', sans-serif;
+    font-size: 25px;
+    left: 20%;
+    top: 33%;
+}
+
+#nav-1 {
+    position: absolute;
+    height: 80px;
+    width: 300px;
+    right: 2%;
+    display: flex;
+}
+
+.nav-1-1 {
+    margin: auto;
+    font-family: 'raleway', sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-1-1:hover {
+    text-decoration: underline;
+}
+
+.nav-1-1:visited {
+    text-decoration: none;
+    color: black;
+}
+
+#i-1 {
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(http://static.wixstatic.com/media/a04ac0cde13c4cadb5e47f2d58d8f51a.jpg_srz_2125_1416_85_22_0.50_1.20_0.00_jpg_srz);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+}
+
+#i-1-p {
+    margin: auto;
+    font-family: 'raleway', sans-serif;
+    color: white;
+    font-size: 75px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 6);
+}
+
+.t-1 {
+    width: 100%;
+    height: 250px;
+}
+
+.t-1-1 {
+    font-family: 'raleway', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.t-1-2 {
+    font-family: 'raleway', sans-serif;
+    text-align: center;
+    width: 50%;
+    margin: 0% 25% 0% 25%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'raleway', sans-serif;
+    padding: 3px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}

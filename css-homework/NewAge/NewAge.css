@@ -1,0 +1,230 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url(https://blackrockdigital.github.io/startbootstrap-new-age/img/bg-pattern.png), linear-gradient(to left, #7b4397, #dc2430);
+    height: 3820px;
+}
+
+.navbar-default {
+    background-color: white;
+    border-color: transparent;
+}
+
+.navbar-default .navbar-brand {
+    color: #fdcc52;
+    font-family: 'catamaran', sans-serif;
+    letter-spacing: 1px;
+    color: #fdcc52;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: white;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #d6d0ba;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: white;
+}
+
+.navbar-brand {
+    margin-left: 85px!important;
+}
+
+.navbar-nav {
+    margin-right: 85px;
+}
+
+#intro {
+    height: 780px;
+}
+
+#intro-1 {
+    position: absolute;
+    margin-left: 190px;
+    margin-top: 170px;
+    width: 510px;
+    font-size: 49.5px;
+    line-height: 60px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    color: white;
+    font-family: 'catamaran', sans-serif;
+}
+
+#intro-button {
+    position: absolute;
+    border: solid 1px whitesmoke;
+    width: 250px;
+    height: 48px;
+    border-radius: 100px;
+    color: whitesmoke;
+    display: flex;
+    font-size: 11px;
+    letter-spacing: 1px;
+    top: 570px;
+    left: 190px;
+}
+
+#intro-button:hover {
+    background-color: #fdcc52;
+    text-decoration: none;
+}
+
+#intro-button-p {
+    margin: auto;
+    letter-spacing: 2px;
+    font-family: 'Lato', sans-serif;
+}
+
+#download {
+    height: 590px;
+    background: linear-gradient(#fdcc52, #fdc539);
+    display: flex;
+    text-align: center;
+}
+
+
+
+#download-sec-1 {
+    margin: auto;
+}
+
+#download-title {
+    font-family: 'catamaran', sans-serif;
+    font-size: 70px;
+    width: 700px;
+    text-align: center;
+    line-height: 90px;
+}
+
+#download-info {
+    font-family: 'muli', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+#button-1 {
+    width: 200px;
+}
+
+#features {
+    height: 1200px;
+    background-color: white;
+}
+
+#features-title {
+    position: absolute;
+    font-family: 'catamaran', sans-serif;
+    font-size: 50px;
+    left: 335px;
+    top: 1450px;
+    font-weight: 200;
+}
+
+#features-info {
+    position: absolute;
+    font-family: 'muli', sans-serif;
+    color: grey;
+    left: 480px;
+    top: 1530px;
+}
+
+#features-sec-2 {
+    position: absolute;
+    height: 700px;
+    width: 700px;
+    margin-left: 500px;
+    margin-top: 350px;
+}
+
+#icon-1 {
+    background-color: green;
+    height: 350px;
+    width: 350px;
+    display: inline-block;
+    position: absolute;
+}
+
+#icon-2 {
+    background-color: blue;
+    height: 350px;
+    width: 350px;
+    display: inline-block;
+    position: absolute;
+    margin: 350px;
+}
+
+#icon-3 {
+    background-color: red;
+    height: 350px;
+    width: 350px;
+    display: inline-block;
+    position: absolute;
+    margin-top: 350px;
+}
+
+#icon-4 {
+    background-color: yellow;
+    height: 350px;
+    width: 350px;
+    display: inline-block;
+    position: absolute;
+    margin-left: 350px
+}
+
+#guy-taking-pictures-of-a-mountain {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://blackrockdigital.github.io/startbootstrap-new-age/img/bg-cta.jpg);
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contact {
+    height: 350px;
+    background: linear-gradient(#fdcc52, #fdc539);
+}
+
+#info {
+    height: 100px;
+    background-color: #222;
+    display: flex;
+}
+
+#reserve {
+    font-family: 'muli', sans-serif;
+    color: grey;
+    font-size: 12px;
+    margin: auto;
+    text-align: center;
+}
+
+.device-wrapper {
+    margin-left: 900px;
+    padding-top: 100px;
+}
+
+.screen {
+    overflow: hidden;
+}
+
+.img-responsive {
+    width: 100%;
+}
+
+.footer-btn {
+    text-decoration: none;
+    color: grey;
+    font-family: 'muli', sans-serif;
+    font-size: 12px;
+    padding-left: 5px;
+    padding-right: 5px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation</title>
+    <style>
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li a {
+            border: solid 1px;
+            margin-bottom: 2px;
+            text-decoration: none;
+            display: block;
+            font-size: 30px;
+        }
+
+        div {
+            height: 0;
+            overflow: hidden;
+
+            transition: all 0.5s;
+        }
+
+        div img {
+            width: 300px;
+        }
+
+        a#item1:target+div {
+            height: 200px;
+        }
+
+        a#item2:target+div {
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <a href="#item1" id="item1">item 1</a>
+            <div><img src="https://images.pexels.com/photos/189513/pexels-photo-189513.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt=""></div>
+        </li>
+        <li>
+            <a href="#item2" id="item2">item 2</a>
+            <div><img src="https://images.pexels.com/photos/192454/pexels-photo-192454.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt=""></div>
+        </li>
+    </ul>
+</body>
+</html>

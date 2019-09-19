@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>telescope</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+
+        }
+
+        div {
+            background-image: url(https://www.nps.gov/lacl/learn/nature/images/Mountains-page_-Image-w-cred-cap_-1200w_-Neacola-CRL00222_3.jpg);
+            background-repeat: no-repeat;
+            background-size: auto;
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            margin: auto;
+            margin-top: 100px;
+            animation: move 10s infinite linear;
+        }
+
+        @keyframes move {
+            from {
+                background-position: left;
+            }
+            50% {
+                background-position: right;
+            }
+            100% {
+                background-position: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+</html>

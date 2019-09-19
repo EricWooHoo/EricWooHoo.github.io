@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .container {
+            /*            border: double;*/
+            height: 150px;
+            width: 700px;
+            perspective: 1000px;
+        }
+
+        .images {
+            width: 300px;
+            height: 100px;
+
+            position: absolute;
+            left: 350px;
+            top: 25px;
+
+            border: solid 2px;
+            border-radius: 5px;
+            opacity: 0.5;
+
+            transform-origin: left;
+        }
+
+        img {
+            height: 100px;
+            width: 100px;
+
+            float: right;
+        }
+
+        #red {
+            transform: rotateY(60deg);
+            background-color: red;
+        }
+
+        #orange {
+            transform: rotateY(120deg);
+            background-color: orange;
+        }
+
+        #yellow {
+            transform: rotateY(180deg);
+            background-color: yellow;
+        }
+
+        #green {
+            transform: rotateY(240deg);
+            background-color: lawngreen;
+        }
+
+        #blue {
+            transform: rotateY(300deg);
+            background-color: skyblue;
+        }
+
+        #purple {
+            transform: rotateY(360deg);
+            background-color: mediumpurple;
+        }
+
+        @keyframes spinred {
+            from {
+                transform: rotateY(60deg);
+            }
+            to {
+                transform: rotateY(420deg);
+            }
+        }
+
+        @keyframes spinorange {
+            from {
+                transform: rotateY(120deg);
+            }
+            to {
+                transform: rotateY(480deg);
+            }
+        }
+
+        @keyframes spinyellow {
+            from {
+                transform: rotateY(180deg);
+            }
+            to {
+                transform: rotateY(540deg);
+            }
+        }
+
+        @keyframes spingreen {
+            from {
+                transform: rotateY(240deg);
+            }
+            to {
+                transform: rotateY(600deg);
+            }
+        }
+
+        @keyframes spinblue {
+            from {
+                transform: rotateY(300deg);
+            }
+            to {
+                transform: rotateY(660deg);
+            }
+
+        }
+
+        @keyframes spinpurple {
+            #purple from {
+                transform: rotateY(360deg);
+            }
+            to {
+                transform: rotateY(720deg);
+            }
+        }
+
+        #red {
+            animation-name: spinred;
+        }
+
+        #orange {
+            animation-name: spinorange;
+        }
+
+        #yellow {
+            animation-name: spinyellow;
+        }
+
+        #green {
+            animation-name: spingreen;
+        }
+
+        #blue {
+            animation-name: spinblue;
+        }
+
+        #purple {
+            animation-name: spinpurple;
+        }
+
+        .images {
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        .container:hover {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Joan</h1>
+    <div class="container">
+        <div id="red" class="images">
+            <img src="https://i.pinimg.com/564x/33/cc/77/33cc77001d60d5b7317a27b2d1d0e62e.jpg" alt=""></div>
+        <div id="orange" class="images">
+            <img src="https://i.pinimg.com/564x/33/ba/c2/33bac2e90f34f0e12f550360505b522c.jpg" alt=""></div>
+        <div id="yellow" class="images">
+            <img src="https://i.pinimg.com/564x/39/5d/5f/395d5ffb23389ffdd54abdaa02e80759.jpg" alt=""></div>
+        <div id="green" class="images">
+            <img src="https://i.pinimg.com/564x/1a/7a/8d/1a7a8d70d14bce7992edc73f84f9b991.jpg" alt=""></div>
+        <div id="blue" class="images">
+            <img src="https://i.pinimg.com/564x/f8/21/77/f82177e6ec2afe90aa0ea5229180f5b4.jpg" alt=""></div>
+        <div id="purple" class="images">
+            <img src="https://i.pinimg.com/564x/61/93/b6/6193b6d1347130f55a37da408df50670.jpg" alt=""></div>
+    </div>
+</body>
+</html>
+

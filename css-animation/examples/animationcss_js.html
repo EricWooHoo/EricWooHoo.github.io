@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="animate.css">
+    <style>
+        .offToLeft {
+            transform: translateX(-3000px);
+        }
+
+        html {
+            height: 3000px;
+        }
+
+        h1 {
+            margin-top: 210px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Scroll window</h1>
+    <img class="animated offToLeft" src="http://www.prodirectsoccer.com/us/productimages/V3_1_Main/162989.jpg" alt="">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $(window).scroll(function() {
+                if ($(window).scrollTop() > 200) {
+                    $('img').removeClass('offToLeft').addClass('bounceInLeft');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form1</title>
+    <style>
+        input{
+            width: 120px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    
+    <form action="">
+        <input type="text"placeholder="Enter your name">
+        
+        <br>
+        <input type="password"placeholder="Enter you password">
+        
+        <br>
+        <input type="hidden" value="you can't see me">
+        
+        <input min=1 max=100 type="number">
+        
+        <br>
+        <input type="email">
+        
+        <br>
+        <input type="url">
+        
+        <br>
+        <input type="tel">
+        
+        <br>
+        <input type="submit">
+        
+        <br>
+        <input type="color">
+        
+        <br>
+        <label id="num_people" for=""></label>
+        <input min=1 max=2 type="range" oninput="updateRange(this.value)" onchange='updateRange(this.value)'>
+    </form>
+    
+    <script>
+        function updateRange(val) {
+            var num_people=document.getElementById('num_people');num_people.innerHTML=val;
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Func vs Property</title>
+    <style>
+        .container {
+            perspective: 400px;
+            border: double;
+        }
+
+        img {
+
+            /*          apply to its children*/
+            /*            perspective: 400px;*/
+            width: 400px;
+
+            transform: perspective(400px)rotateY(30deg);
+            transform: rotateY(30deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg" alt="">
+    </div>
+</body>
+</html>

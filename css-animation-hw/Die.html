@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Die</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            border: 3px blue solid;
+            width: 1000px;
+            height: 600px;
+            position: relative;
+            perspective: 300px;
+        }
+
+        .num {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: rgba(63, 191, 191, 0.5);
+        }
+
+        #num-1 {
+            top: 200px;
+            left: 500px;
+            transform: rotateY(5deg);
+        }
+
+        #num-2 {
+            top: 200px;
+            left: 267px;
+            transform: rotateY(-45deg) translateZ(-90px);
+        }
+
+        #num-5 {
+            top: 200px;
+            left: 450px;
+            transform: rotateY(-45deg) translateZ(-110px);
+        }
+
+        #num-6 {
+            top: 200px;
+            left: 374px;
+            transform: rotateY(5deg) translateZ(-130px);
+        }
+
+        #num
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="num-1" class="num">1</div>
+        <div id="num-2" class="num">2</div>
+        <div id="num-3" class="num">3</div>
+        <div id="num-4" class="num">4</div>
+        <div id="num-5" class="num">5</div>
+        <div id="num-6" class="num">6</div>
+    </div>
+
+</body>
+
+</html>

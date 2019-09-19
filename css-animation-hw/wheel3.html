@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .surface {
+            perspective: 750px;
+        }
+
+        .container {
+            transform-style: preserve-3d;
+
+            margin-top: 100px;
+
+            height: 130px;
+            text-align: center;
+        }
+
+        img {
+            width: 200px;
+            height: 130px;
+            padding-left: 150px;
+
+            position: absolute;
+            /*            left: 400px;*/
+            /*            top: 250px;*/
+            border: double black 15px;
+            border-radius: 5%;
+            transform-origin: left;
+        }
+
+        #ocelot {
+            background-color: purple;
+        }
+
+        #cheetah {
+            transform: rotateY(72deg);
+            background-color: blue;
+        }
+
+        #lion {
+            transform: rotateY(144deg);
+            background-color: limegreen;
+        }
+
+        #panther {
+            transform: rotateY(216deg);
+            background-color: yellow;
+        }
+
+        #snowleopard {
+            transform: rotateY(288deg);
+            background-color: red;
+        }
+
+        .container {
+            animation-name: spin;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes spin {
+            0% {}
+            100% {
+                transform: rotateY(360deg);
+            }
+
+        }
+
+        .container:hover {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="surface">
+
+        <div class="container">
+            <img id=ocelot src="http://www.zooborns.com/.a/6a010535647bf3970b0192ac94929d970d-500wi" alt="">
+
+            <img id=cheetah src="https://i.ytimg.com/vi/8uD28rUF0Rk/hqdefault.jpg" alt="">
+
+            <img id=lion src="http://wlpapers.com/images/lion-cub-cute-1.jpg" alt="">
+
+            <img id=panther src="https://i.pinimg.com/236x/53/ec/b6/53ecb6ff72900e52295ae9686e9ad634--panther-cub-baby-panther.jpg" alt="">
+
+            <img id=snowleopard src="http://www.cutestpaw.com/wp-content/uploads/2013/08/s-Snow-leopard-cub.jpg" alt="">
+        </div>
+
+    </div>
+</body>
+</html>
+
+
+

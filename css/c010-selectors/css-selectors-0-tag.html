@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #hobby {
+/*            color: red;*/
+        }
+        body ul {
+            color: tomato !important;
+        }
+        ul {
+            font-size: 3em;
+            color: lime !important;
+        }
+        
+        [data='whatido'] {
+            color: purple;
+        }
+        
+        ul.list {
+            color: blue;
+        }
+        
+        span {
+            color: red;
+        }
+        ul li {
+            color: skyblue;
+        }
+        
+        ul>li {
+            color: deepskyblue;
+        }
+        
+        li:first-child {
+            color: red;
+        }
+        
+        li:nth-child(2) {
+            color: purple;
+        }
+        
+        li:hover {
+            color: goldenrod;
+        }
+        
+    </style>
+</head>
+<body>
+   <h2>!important>inline style>id>class=data>tag</h2>
+   <h2>priority same, order matters</h2>
+   <h2>long path > short path</h2>
+   --css specificity
+    <ul class="list" id="hobby" data='whatido' style='color: black'>
+        <li>Soccer <span>with friends</span></li>
+        <li>Running</li>
+        <li>Swimming</li>
+    </ul>
+</body>
+</html>

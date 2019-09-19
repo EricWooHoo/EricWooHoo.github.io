@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<style>
+		.container {
+			width: 400px;
+			height: 300px;
+			background-image: url(http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=64558973);
+			background-repeat: no-repeat;
+			border: solid 1px yellow;
+		}
+		
+		.expand {
+			height: 400px;
+		}
+		
+		#scroll {
+			background-attachment: scroll;
+		}
+		
+		#local {
+			background-attachment: local;
+		}
+		
+		#fixed {
+			background-attachment: fixed;
+		}
+		
+		body {
+			height: 2000px;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="scroll" class="container">
+		<div class="expand"></div>
+
+	</div>
+	<div id="scroll" class="container">
+		<div class="expand"></div>
+		<div id="scroll" class="container">
+			<div class="expand"></div>
+
+		</div
+		<div id="scroll" class="contaner">
+			<div class="expand"></div>
+		</div
+		<div id="scroll" class="continer">
+			<div class="expand"></div
+
+		</div>
+
+	</div>
+	<div id="local" class="container">
+		<div class="expand"></div>
+	</div>
+	<div id="fixed" class="container">
+		<div class="expand"></div>
+	</div>
+</body>
+
+</html>

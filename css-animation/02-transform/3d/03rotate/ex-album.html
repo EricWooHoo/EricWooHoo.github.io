@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>album</title>
+    <style>
+        #surface {
+            margin-top: 100px;
+
+        }
+
+        img {
+            width: 300px;
+            box-shadow: 2px 2px 5px grey;
+        }
+
+        .album {
+            display: inline-block;
+            transform: perspective(100px) rotateY(-5deg);
+
+            margin-right: 40px;
+        }
+
+        .album:before {
+            content: '';
+            width: 30px;
+            height: 98%;
+            background-color: white;
+
+            display: inline-block;
+            position: absolute;
+            left: 99%;
+
+            transform-origin: left;
+            transform: perspective(100px) rotateY(45deg);
+            z-index: -1;
+        }
+
+        .album:after {
+            content: 'back';
+            width: 100%;
+            height: 86%;
+            background-color: tomato;
+
+            display: inline-block;
+            position: absolute;
+            top: 13px;
+            left: 18px;
+            z-index: -2;
+            box-shadow: 10px 10px 10px grey;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="surface">
+        <div class="album">
+            <img src="https://images.pexels.com/photos/66997/pexels-photo-66997.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt=""></div>
+        <div class="album">
+            <img src="https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?w=940&h=650&auto=compress&cs=tinysrgb" alt=""></div>
+        <div class="album">
+            <img src="https://images.pexels.com/photos/36744/agriculture-arable-clouds-countryside.jpg?w=940&h=650&auto=compress&cs=tinysrgb" alt=""></div>
+    </div>
+</body>
+
+</html>

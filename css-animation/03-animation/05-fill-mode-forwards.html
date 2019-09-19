@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>fill-move-fowards</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-image: url(https://www.petmd.com/sites/default/files/petmd-cat-happy-10.jpg);
+            background-position: center;
+            background-size: cover;
+            border-radius: 50%;
+            font-size: 30px;
+            color: limegreen;
+
+            animation-name: move;
+            animation-timing-function: linear;
+            animation-duration: 2s;
+            animation-delay: 1s;
+        }
+
+        /*depends on 2 facts*/
+
+        /*iteration-count, animation-direction*/
+
+        #forw {
+            animation-fill-mode: forwards;
+        }
+
+        #back {
+            animation-fill-mode: backwards;
+        }
+
+        #both {
+            animation-fill-mode: both;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translateX(200px);
+            }
+            100% {
+                transform: translateX(400px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--   jumps to 0% of animation, then does animation, then stays there-->
+    <div id="forw">Forwards</div>
+    <!--    what frame we want to use before animation-->
+    <div id="back">Backwards</div>
+    <!--    forwards and backwards-->
+    <div id="both">Both</div>
+</body>
+
+</html>

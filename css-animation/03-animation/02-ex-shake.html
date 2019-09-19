@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shakes</title>
+    <style>
+        img {
+            width: 300px;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+
+            /*            transition: 1s;*/
+        }
+
+        img {
+            /*            left: 300px;*/
+        }
+
+        @keyframes shake {
+            0% {
+                left: -10px;
+                border-right: solid 8px;
+            }
+            100% {
+                left: 10px;
+                border-left: solid 8px;
+            }
+        }
+
+        img {
+            animation-name: shake;
+            animation-duration: 0.001s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        img:hover {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://www.cesarsway.com/sites/newcesarsway/files/styles/large_article_preview/public/Common-dog-behaviors-explained.jpg?itok=FSzwbBoi" alt="">
+</body>
+</html>

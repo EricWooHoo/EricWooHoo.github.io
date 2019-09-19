@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Animation</title>
+    <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            height: 100%;
+        }
+
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            border-radius: 50%;
+            position: relative;
+            left: 5px;
+
+            /*            transition: left 1s;*/
+            transition-property: left;
+            transition-duration: 1s;
+            transition-timing-function: ease;
+        }
+
+        body:hover div {
+            left: 300px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div></div>
+
+</body>
+</html>

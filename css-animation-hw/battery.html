@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>battery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        @keyframes move {
+            from {
+                height: 0px;
+                margin-top: 400px;
+                background-color: red;
+            }
+            50% {
+                height: 400px;
+                margin-top: 0px;
+                background-color: limegreen;
+            }
+            to {
+                height: 0px;
+                margin-top: 400px;
+                background-color: red;
+            }
+        }
+
+        #battery {
+            height: 400px;
+            width: 200px;
+            border: solid 1px limegreen;
+            border-radius: 20px;
+
+            margin: auto;
+            margin-top: 100px;
+        }
+
+        #top {
+            height: 10px;
+            width: 30px;
+            border-radius: 5px 5px 0px 0px;
+            border: solid 1px limegreen;
+            position: absolute;
+            top: 91px;
+            left: 48.8%;
+            margin: auto;
+        }
+
+        #filling {
+            position: absolute;
+            width: 200px;
+            margin-top: 400px;
+            background-color: limegreen;
+            height: 0px;
+            border-radius: 20px;
+        }
+
+        #filling {
+            animation-name: move;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="battery">
+        <div id="top"></div>
+        <div id="filling">
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

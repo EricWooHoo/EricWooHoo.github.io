@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation</title>
+    <style>
+        a {
+            color: black;
+            font-size: 40px;
+            text-decoration: none;
+            background-color: darkorange;
+            padding: 20px 80px;
+            display: inline-block;
+        }
+
+        a:visited {
+            color: black;
+        }
+
+        a:not(:first-child) {
+            margin-left: 30px;
+        }
+
+        img {
+            position: absolute;
+            width: 50%;
+        }
+
+        .tab div {
+            opacity: 0;
+            transition: all 1s;
+        }
+
+        div:target {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tab">
+        <!--        can do "a[href=#item$]*3"-->
+        <a href="#item1">I</a>
+        <a href="#item2">II</a>
+        <a href="#item3">III</a>
+        <div id="item1">
+            <img src="https://images.pexels.com/photos/213621/pexels-photo-213621.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="">
+        </div>
+        <div id="item2">
+            <img src="https://images.pexels.com/photos/216584/pexels-photo-216584.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="">
+        </div>
+        <div id="item3">
+            <img src="https://images.pexels.com/photos/633717/pexels-photo-633717.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 300px;
+            border: double red;
+            margin: auto;
+            margin-top: 200px;
+
+            perspective: 400px;
+        }
+
+        .item {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin: auto;
+        }
+
+        .item {
+            transform: scaleZ(2) translateZ(100px);
+            /*            same thing below*/
+            /*            transform: scaleZ(1) translateZ(200px);*/
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="item"></div>
+    </div>
+
+
+</body>
+</html>

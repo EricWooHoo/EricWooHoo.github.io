@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .container {
+            perspective: 500px;
+            font-size: 8em;
+            text-align: center;
+
+            perspective-origin: 500px 270px;
+            transition: 2s;
+            transform-style: preserve-3d;
+        }
+
+        .side {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            opacity: 0.5;
+        }
+
+        #side1 {
+            background-color: orange;
+            left: 200px;
+            top: 200px;
+        }
+
+        #side2 {
+            background-color: yellow;
+            left: 200px;
+            top: 200px;
+            transform-origin: center;
+            transform: translateZ(150px);
+        }
+
+        #side3 {
+            background-color: red;
+            left: 50px;
+            top: 200px;
+            transform-origin: right;
+            transform: rotateY(90deg);
+        }
+
+        #side4 {
+            left: 350px;
+            top: 200px;
+            background-color: blue;
+            transform-origin: left;
+            transform: rotateY(270deg);
+        }
+
+        #side5 {
+            left: 200px;
+            top: 50px;
+            background-color: springgreen;
+            transform-origin: bottom;
+            transform: rotateX(-90deg);
+        }
+
+        #side6 {
+            background-color: purple;
+            left: 200px;
+            top: 200px;
+            transform-origin: bottom;
+            transform: rotateX(270deg);
+        }
+
+        .container:hover {
+            perspective-origin: 50px 270px;
+            transition: 1s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="side1" class="side">6</div>
+        <div id="side2" class="side">1</div>
+        <div id="side3" class="side">3</div>
+        <div id="side4" class="side">4</div>
+        <div id="side5" class="side">2</div>
+        <div id="side6" class="side">5</div>
+    </div>
+
+</body>
+</html>
+
+
+
+

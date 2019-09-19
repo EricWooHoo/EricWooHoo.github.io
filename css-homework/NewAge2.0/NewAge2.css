@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    height: 55px;
+    background-color: blue;
+}
+#brand {
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 11px;
+    
+}
+#brand-name {
+    color: #fdcc52;
+    font-family: 'Catamaran',sans-serif;
+    font-weight: 200;
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-decoration: none;
+}

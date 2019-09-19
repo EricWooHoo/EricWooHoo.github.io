@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .container {
+            perspective: 400px;
+        }
+
+        .rotate {
+            width: 100px;
+            height: 200px;
+            background-color: #067;
+            font-size: 4em;
+            color: white;
+
+            margin: auto;
+            margin-bottom: 20px;
+
+            transition: 10s;
+        }
+
+        .rotate1 {
+            transform: rotateX(1turn);
+            transform-origin: bottom;
+            /*            transform-origin: top;*/
+        }
+
+        .rotate2 {
+            /*            transform: rotateY(2turn);*/
+            transform-origin: left;
+        }
+
+        .rotate3 {
+            transform: rotateZ(450deg);
+            /*            transform-origin: top;*/
+            transform-origin: bottom;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="rotate rotate1">X</div>
+        <div class="rotate rotate2">Y</div>
+        <div class="rotate rotate3">Z</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wheel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #container {
+            border: solid blue 2px;
+            height: 500px;
+            width: 700px;
+            margin: auto;
+            perspective: 400px;
+        }
+
+        .whl {
+            width: 300px;
+            height: 150px;
+            background-color: black;
+            position: absolute;
+        }
+
+        #whl_1 {
+            transform: rotateY(72deg);
+            left: 90px;
+            top: 200px;
+        }
+
+        #whl_2 {
+            transform: rotateY(144deg);
+            left: 200px;
+            /*            top: 200px;*/
+        }
+
+        #whl_3 {
+            transform: rotateY(216deg);
+            left: 10px;
+            top: 200px;
+        }
+
+        #whl_4 {
+            transform: rotateY(288deg);
+            left: px;
+            /*            top: 200px;*/
+        }
+
+        #whl_5 {
+            transform: rotateY(360deg);
+            left: 200px;
+            /*            top: 200px;*/
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="whl_1" class="whl"></div>
+        <div id="whl_2" class="whl"></div>
+        <div id="whl_3" class="whl"></div>
+        <div id="whl_4" class="whl"></div>
+        <div id="whl_5" class="whl"></div>
+    </div>
+
+</body>
+</html>
